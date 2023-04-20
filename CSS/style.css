@@ -1,0 +1,147 @@
+.contaiMain {
+    width: 100%;
+    height: 95vh;
+    background: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 2px;
+    gap: 5px;
+    place-items: center;
+}
+
+.card {
+    background: #f7f7f9;
+    padding: 4px;
+    box-sizing: border-box;
+    box-shadow:inset 0 5px 5px #CED0DF,
+    0 -5px 10px #F3F3F3,
+    inset 0 -5px 5px #EFF1F0,
+    0 10px 15px #CDD4DE;
+}
+
+.card .Image__Product1 {
+    width: 363px;
+    height: 241.68px;
+    background-image: url("/Public/vf9_Vinfast.png");
+    background-size: cover;
+}
+
+.card .Image__Product2 {
+    width: 363px;
+    height: 241.68px;
+    background-image: url("/Public/vf10_Vinfast.png");
+    background-size: cover;
+}
+
+.card .Image__Product3 {
+    width: 363px;
+    height: 241.68px;
+    background-image: url("/Public/lux-a_Vinfast.png");
+    background-size: cover;
+}
+
+.Title {
+    font-size: 48px;
+    letter-spacing: -0.9px;
+    font-weight: 300;
+    color: #313131;
+    margin-left: 16px;
+}
+
+.Content {
+    color: #777777;
+    margin-left: 16px;
+    font-size: 20px;       
+}
+
+.Des {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    color: black;
+    text-shadow: 0px 0px 2px #f7f7f9;;
+}
+
+.Price {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 17px;
+}
+
+.SeeMore {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    height: 95px;
+    width: 95%;
+    place-items: center;
+}
+
+#Add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 25px;
+    background:linear-gradient(90deg, rgba(38,143,226,1) 0%, rgba(9,9,121,1) 23%, rgba(0,212,255,1) 100%);
+    backdrop-filter: blur(20px);
+    font-size: 11px;
+    border: 1px solid #0b3f99;
+    text-transform: uppercase;
+    letter-spacing: 1.91px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+}
+
+#Add:hover {
+    opacity: 0.7;
+    border: 1px solid #ffffff55;
+    backdrop-filter: blur(20px);
+}
+
+#See {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 25px;
+    background: #ffffff1f;
+    font-size: 11px;
+    border: 1px solid #1049ab;
+    text-transform: uppercase;
+    letter-spacing: 1.91px;
+    transition: 0.3s;
+    background: linear-gradient(90deg, rgba(38,143,226,1) 0%, rgba(9,9,121,1) 74%, rgba(0,212,255,1) 100%);background: linear-gradient(90deg, rgba(38,143,226,1) 0%, rgba(9,9,121,1) 81%, rgba(0,212,255,1) 100%);
+    color: white;
+    border-radius: 2px;
+}
+#See:hover {
+    opacity: 0.7;
+    border: 1px solid #ffffff55;
+    backdrop-filter: blur(20px);
+}
+
+
+/* RESPONSIZE */ 
+
+@media screen and (max-width: 700px ){
+    .Fire__Page {
+        display: none;
+    }
+    #Login__Page {
+        display: none;
+    }
+    #Register__Page {
+        display: none;
+    }
+    #Icon__Menu__Page {
+        position: absolute;
+        right: 7%;
+    }
+    .contaiMain { 
+        grid-template-columns: 1fr;
+        row-gap: 2px;
+    }
+}

@@ -1,0 +1,243 @@
+
+
+:root {
+    --white-color: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.Vinfast_Page {
+    width: 100%;
+    height: 100vh;
+    background: #f7f9f9;
+}
+
+#Header__Page {
+    display: grid;
+    grid-template-columns:17rem 38rem  auto;
+    width: 100%;
+    height: 80px;
+    background: rgb(11, 63, 153);
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 5;
+
+}
+.Logo__Page {
+    display: flex;
+    align-items: center;
+    background: rgb(11, 63, 153);
+    
+}
+
+.Fire__Page {
+    display: flex;
+    align-items: cetner;
+    background: rgb(11, 63, 153);
+}
+
+.Menu__Page {
+    background: rgb(11, 63, 153);
+}
+
+.Logo__Page #Logo__Left {
+    width: 123.35px;
+    height: 30px;
+    background: url('/Public/LogoVinfast__Left.png');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    outline: none;
+    margin-left: 2.5rem;
+    cursor: pointer;
+}
+
+.Fire__Page ul {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 33rem;
+    justify-content: space-between;
+}
+
+.Fire__Page ul li {
+    list-style: none;
+    cursor: pointer;
+    color: var(--white-color);
+    transition: 0.3s;
+}
+
+.Fire__Page ul li:hover {
+    color: #1464f4;
+} 
+
+.Menu__Page {
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+#Login__Page {
+    font-size: 16px;
+    background: transparent;
+    color: var(--white-color);
+    transition: 0.3s;
+    border: none;
+    background: #ffffff1f;
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    border-radius: 1.2px;
+}
+
+#Login__Page:hover {
+    background: rgb(11, 63, 153);
+}
+
+#Register__Page {
+    background: transparent;
+    color: rgb(11, 63, 153);
+    transition: 0.3s;
+    border: none;
+    background: #ffffff;
+    backdrop-filter: blur(15px);
+    padding: 13px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 1.5px;
+}
+
+#Register__Page:hover {
+    background: rgb(11, 63, 153);
+    color: white;
+}
+
+#Icon__Menu__Page {
+    width: 40px;
+    height: 40px;
+    background-image: url('/Public/Menu.png');
+    background-size: cover;
+    border: 1.1px solid rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 1.2px;
+    outline: none;
+    transition: 0.3 ease;
+}
+
+#Icon__Menu__Page:hover {
+    opacity: 0.7;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0%;
+    background-size: cover;
+    background-position: top;
+}
+
+.swiper {
+    width: 100%;
+    height: 86.7%;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+}
+
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.swiper-button-next {
+    background: #ffffff3f;
+    margin-right: 30px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+}
+
+.swiper-button-prev {
+    background: #ffffff3f;
+    margin-left: 30px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+}
+
+@media screen and (max-width: 700px){
+    .swiper-button-next {
+    margin-right: 10px;
+    }
+    .swiper-button-prev {
+    margin-left: 10px;
+    } 
+    .swiper {
+    object-fit: cover;
+    object-position: center;
+    }
+    .Fire__Page ul {
+    flex-direction: column;
+    height: 300px;
+    width: 100px;
+    text-align: left;
+    position: absolute;
+    right: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .Fire__Page ul li {
+        color: black;
+        padding: 21px;
+        width: 300px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        background: rgb(255, 255, 255);
+    }
+}
